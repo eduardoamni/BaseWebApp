@@ -27,5 +27,28 @@
 
 <script>var apiKey='<%= process.env.API_KEY %>';</script>
 
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "<%= process.env.FIREBASE_KEY %>",
+    authDomain: "nuevo-proyecto-1234.firebaseapp.com",
+    databaseURL: "https://nuevo-proyecto-1234.firebaseio.com",
+    projectId: "nuevo-proyecto-1234",
+    storageBucket: "nuevo-proyecto-1234.appspot.com",
+    messagingSenderId: "866118973541",
+    appId: "1:866118973541:web:f9f2fd9034014d8ffeae8c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
 <!-- then our app's own js file -->
 <script src="js/main.js"></script>
