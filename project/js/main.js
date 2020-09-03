@@ -3,7 +3,7 @@ $(document).ready(function(){
 })
 
 function getWeather(varr){
-  var url = "http://api.openweathermap.org/data/2.5/weather?q="+ varr +"&units=metric&appid=0a1d9df59674b9fc41355d91fc82e893";
+  var url = "https://api.openweathermap.org/data/2.5/weather?q="+ varr +"&units=metric&appid=0a1d9df59674b9fc41355d91fc82e893";
 
   $('.city').text("");
   $('.error-message').text("");
