@@ -24,7 +24,7 @@ function searchWeather(){
 }
 
 
-function handleSignin(){
+function handleSignIn(){
   var provider = new firebase.auth.GoogleAuthProvider();
 
 
